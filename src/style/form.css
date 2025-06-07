@@ -1,0 +1,86 @@
+.form{
+    width:100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inner_form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #e7e5e5;
+    padding: 30px;
+}
+.inner_form input{
+    border-radius: 8px;
+    padding: 10px 27px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: none;
+}
+.inner_form button{
+    width: 120px;
+    background-color: #9278aa;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    margin-top: 10px;
+}
+.inner_form button:hover{
+    background-color: blueviolet;
+}
+.form_fields{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form_fields label{
+   margin: 0px 20px;
+}
+.basic_fields{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.address_fields{
+    display: flex;
+    justify-content: center;
+}
+.error{
+    color: red;
+    margin-top: 10px;
+}
+.fields{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.field span{
+    margin: 10px 0px;
+}
+.form_work_fields{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.form_fields_work_input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+}
+/* .moreworkinput{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+} */
+ .remove-btn{
+    margin-left: 10px;
+ }
