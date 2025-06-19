@@ -1,41 +1,99 @@
-.App {
-  text-align: center;
+body {
+  font-family: 'Poppins', sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+    padding: 1rem;
   }
+.map-loading-points{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+  gap: 1.1rem;
+  padding: 1rem;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.one-to-many h3{
+  background-color: lightgray;
+  padding: 0.5rem;
+}
+.remove-row-button{
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    color: red;
+    border: 1px solid red;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+.remove-row-button:hover{
+    color: white;
+    background-color: red;
+}
+.add-row-button{
+  position: relative;
+  border: none;
+  cursor: pointer;
+  color: blueviolet;
+  height: 36px;
+  width: 7rem;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  font-size: 15px;
+}
+.add-row-button label{
+  font-size: 20px;
+  background-color: blueviolet;
+  color: white;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  font-weight: bold;
+  padding: 0px 1px 0px 0px;
+}
+.table-row{
+  margin: 10px;
+}
+.save-button{
+  border: none;
+  background-color: blueviolet;
+  color: white;
+  font-weight: 700;
+  padding: 10px 25px;
+  border-radius: 10px;
+  cursor:pointer;
+}
+.save-button:hover{
+  border: 1px solid blueviolet;
+  background-color: white;
+  color: blueviolet;
+
+}
+.cancel-button{
+  border: none;
+  margin: 0px 10px;
+  padding: 10px 25px;
+  color: rgb(60, 59, 59);
+  cursor: pointer;
+  
+}
+.cancel-button:hover{
+  background-color: red;
+  border-radius: 10px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.one-to-many-container p{
+  background-color: #eaeaea;
+  padding: 5px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.error{
+  color: red;
+  font-size: 0.8rem;
+  padding-top: 6px;
 }
-.input_main{
-  
+.one-to-many-table{
+  width: 65%;
 }

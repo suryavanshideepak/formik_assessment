@@ -1,13 +1,19 @@
 import * as Yup from 'yup';
 
 export const validationSchema = Yup.object({
-  name: Yup.string().required('Name is required'),
-  phone: Yup.string().required('Phone is required'),
-  city:Yup.string().required('City is required'),
-  address:Yup.string().required('Address is required'),
+  location_name: Yup.string().required('Name is required'),
+  location_code: Yup.string().required('Code is required'),
   state:Yup.string().required('State is required'),
-  location:Yup.string().required('location is required'),
-  pincode:Yup.string().required('pincode is required'),
-  work: Yup.array().of(Yup.string().required('Work field is required'))
-  .min(1, 'At least one work entry is required'),
+  region:Yup.string().required('Region is required'),
+  pincode:Yup.number().typeError("Pincode must be a number").test("len", "Pincode must be 6 digits", val => val && val.toString().length === 6),
+  lat: Yup.number()
+  .typeError("Latitude must be a number")
+  .required("Latitude is required")
+  .min(-90, "Latitude must be ≥ -90")
+  .max(90, "Latitude must be ≤ 90"),
+  long: Yup.number()
+  .typeError("Longitude must be a number")
+  .required("Longitude is required")
+  .min(-180, "Longitude must be ≥ -180")
+  .max(180, "Longitude must be ≤ 180"),
 });

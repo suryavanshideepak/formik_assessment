@@ -1,0 +1,20 @@
+.input_field {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  margin: 14px 0px;
+} 
+.input_field input{
+  border: 1px solid lightgray;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  padding: 0.4rem;
+  font-size: 0.7rem;
+  width: 21rem;
+  border-radius: 7px;
+}
+.input_field input:focus {
+  outline: none;
+  border: 3px solid blueviolet;
+  box-shadow: 0 0 5px blueviolet; 
+}

@@ -1,12 +1,12 @@
 import './App.css';
-import DemoApiCall from './components/DemoApiCall';
-import Form from './components/Form';
+import CreateLocation from './pages/CreateLocation';
+import { useSelector } from 'react-redux';
 
 function App() {
+  const { field_config } = useSelector((state) => state?.getData?.getFieldConfig)
   return (
     <div className="App">
-      {/* <Form/> */}
-      <DemoApiCall/>
+      <CreateLocation field_config={field_config}/>
     </div>
   );
 }

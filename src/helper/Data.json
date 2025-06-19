@@ -1,0 +1,561 @@
+{
+    "field_config": {
+            "One to One": {
+              "lat": {
+                "locked": "false",
+                "unique": false,
+                "options": [],
+                "category": "general",
+                "maxWidth": "500",
+                "minWidth": "123",
+                "mandatory": "false",
+                "maxLength": "20",
+                "read_only": "false",
+                "field_type": "float",
+                "display_def": "false",
+                "isHyperLink": false,
+                "order_index": 9,
+                "display_name": "Lattitude",
+                "related_field_name": "",
+                "look_up_expressions": [
+                  "exact",
+                  "gt",
+                  "gte",
+                  "lt",
+                  "lte",
+                  "range"
+                ]
+              },
+              "long": {
+                "locked": "false",
+                "unique": false,
+                "options": [],
+                "category": "general",
+                "maxWidth": "500",
+                "minWidth": "119",
+                "mandatory": "false",
+                "read_only": "false",
+                "field_type": "float",
+                "display_def": "true",
+                "isHyperLink": false,
+                "order_index": 10,
+                "display_name": "Longitude",
+                "related_field_name": "",
+                "look_up_expressions": [
+                  "exact",
+                  "gt",
+                  "gte",
+                  "lt",
+                  "lte",
+                  "range"
+                ]
+              },
+              "state": {
+                "locked": "true",
+                "unique": false,
+                "options": [
+                  "basic/state/dropdownlist"
+                ],
+                "category": "general",
+                "maxWidth": "500",
+                "minWidth": "200",
+                "mandatory": "true",
+                "maxLength": "50",
+                "read_only": "false",
+                "field_type": "related_field",
+                "display_def": "true",
+                "isHyperLink": false,
+                "order_index": 6,
+                "display_name": "State",
+                "related_field_name": "state_name",
+                "look_up_expressions": [
+                  "in",
+                  "not_in"
+                ]
+              },
+              "alias1": {
+                "locked": "false",
+                "unique": false,
+                "options": [],
+                "category": "general",
+                "maxWidth": "500",
+                "minWidth": "120",
+                "mandatory": "false",
+                "maxLength": "50",
+                "read_only": "false",
+                "field_type": "text",
+                "display_def": "false",
+                "isHyperLink": false,
+                "order_index": 3,
+                "display_name": "Alias1",
+                "related_field_name": "",
+                "look_up_expressions": [
+                  "contains",
+                  "icontains",
+                  "exact",
+                  "iexact",
+                  "startswith",
+                  "istartswith",
+                  "endswith",
+                  "iendswith",
+                  "isnull"
+                ]
+              },
+              "alias2": {
+                "locked": "false",
+                "unique": false,
+                "options": [],
+                "category": "general",
+                "minWidth": "120",
+                "mandatory": "false",
+                "maxLength": "50",
+                "read_only": "false",
+                "field_type": "text",
+                "display_def": "false",
+                "isHyperLink": false,
+                "order_index": 4,
+                "display_name": "Alias2",
+                "related_field_name": "",
+                "look_up_expressions": [
+                  "contains",
+                  "icontains",
+                  "exact",
+                  "iexact",
+                  "startswith",
+                  "istartswith",
+                  "endswith",
+                  "iendswith",
+                  "isnull"
+                ]
+              },
+              "alias3": {
+                "locked": "false",
+                "unique": false,
+                "options": [],
+                "category": "general",
+                "minWidth": "120",
+                "mandatory": "false",
+                "maxLength": "50",
+                "read_only": "false",
+                "field_type": "text",
+                "display_def": "false",
+                "isHyperLink": false,
+                "order_index": 5,
+                "display_name": "Alias3",
+                "related_field_name": "",
+                "look_up_expressions": [
+                  "contains",
+                  "icontains",
+                  "exact",
+                  "iexact",
+                  "startswith",
+                  "istartswith",
+                  "endswith",
+                  "iendswith",
+                  "isnull"
+                ]
+              },
+              "region": {
+                "locked": "true",
+                "unique": false,
+                "options": [
+                  "basic/region/dropdownlist"
+                ],
+                "category": "general",
+                "minWidth": "120",
+                "mandatory": "true",
+                "maxLength": "50",
+                "read_only": "false",
+                "field_type": "related_field",
+                "display_def": "true",
+                "isHyperLink": false,
+                "order_index": 7,
+                "display_name": "Region",
+                "related_field_name": "region_name",
+                "look_up_expressions": [
+                  "in",
+                  "not_in"
+                ]
+              },
+              "is_lock": {
+                "locked": "false",
+                "unique": false,
+                "options": {
+                  "true": "Locked",
+                  "false": "Unlocked"
+                },
+                "category": "other",
+                "maxWidth": "500",
+                "minWidth": "130",
+                "mandatory": "false",
+                "read_only": "false",
+                "field_type": "boolean",
+                "display_def": "true",
+                "isHyperLink": false,
+                "order_index": 15,
+                "display_name": "Locked",
+                "related_field_name": "",
+                "look_up_expressions": [
+                  "is",
+                  "is not"
+                ]
+              },
+              "pincode": {
+                "locked": "false",
+                "unique": false,
+                "options": [],
+                "category": "general",
+                "maxWidth": "500",
+                "minWidth": "117",
+                "mandatory": "false",
+                "maxLength": "50",
+                "read_only": "false",
+                "field_type": "text",
+                "display_def": "true",
+                "isHyperLink": false,
+                "order_index": 8,
+                "display_name": "Pincode",
+                "related_field_name": "",
+                "look_up_expressions": [
+                  "contains",
+                  "icontains",
+                  "exact",
+                  "iexact",
+                  "startswith",
+                  "istartswith",
+                  "endswith",
+                  "iendswith",
+                  "isnull"
+                ]
+              },
+              "is_active": {
+                "locked": "false",
+                "unique": false,
+                "options": {
+                  "true": "Active",
+                  "false": "Inactive"
+                },
+                "category": "other",
+                "maxWidth": "500",
+                "minWidth": "126",
+                "mandatory": "false",
+                "read_only": "false",
+                "field_type": "boolean",
+                "display_def": "true",
+                "isHyperLink": false,
+                "order_index": 14,
+                "display_name": "Active",
+                "related_field_name": "",
+                "look_up_expressions": [
+                  "is",
+                  "is not"
+                ]
+              },
+              "created_at": {
+                "locked": "false",
+                "unique": false,
+                "options": [],
+                "category": "other",
+                "maxWidth": "500",
+                "minWidth": "120",
+                "mandatory": "false",
+                "maxLength": "50",
+                "read_only": "true",
+                "field_type": "date_time",
+                "display_def": "false",
+                "isHyperLink": false,
+                "order_index": 18,
+                "display_name": "Created At",
+                "related_field_name": "",
+                "look_up_expressions": [
+                  "range",
+                  "after",
+                  "before",
+                  "equal"
+                ]
+              },
+              "created_by": {
+                "locked": "false",
+                "unique": false,
+                "options": [
+                  "user/users/dropdownlist"
+                ],
+                "category": "other",
+                "maxWidth": "500",
+                "minWidth": "130",
+                "mandatory": "false",
+                "maxLength": "50",
+                "read_only": "true",
+                "field_type": "related_field",
+                "display_def": "false",
+                "isHyperLink": false,
+                "order_index": 17,
+                "display_name": "Created By",
+                "related_field_name": "full_name",
+                "look_up_expressions": [
+                  "in",
+                  "not_in"
+                ]
+              },
+              "is_approve": {
+                "locked": "false",
+                "unique": false,
+                "options": {
+                  "true": "Approved",
+                  "false": "Unapproved"
+                },
+                "category": "other",
+                "maxWidth": "500",
+                "minWidth": "130",
+                "mandatory": "false",
+                "read_only": "false",
+                "field_type": "boolean",
+                "display_def": "true",
+                "isHyperLink": false,
+                "order_index": 16,
+                "display_name": "Approved",
+                "related_field_name": "",
+                "look_up_expressions": [
+                  "is",
+                  "is not"
+                ]
+              },
+              "location_code": {
+                "locked": "true",
+                "unique": true,
+                "options": [],
+                "category": "general",
+                "maxWidth": "500",
+                "minWidth": "119",
+                "mandatory": "true",
+                "maxLength": "30",
+                "read_only": "false",
+                "field_type": "text",
+                "display_def": "true",
+                "isHyperLink": false,
+                "order_index": 2,
+                "display_name": "Code",
+                "related_field_name": "",
+                "look_up_expressions": [
+                  "contains",
+                  "icontains",
+                  "exact",
+                  "iexact",
+                  "startswith",
+                  "istartswith",
+                  "endswith",
+                  "iendswith",
+                  "isnull"
+                ]
+              },
+              "location_name": {
+                "locked": "true",
+                "unique": true,
+                "options": [],
+                "category": "general",
+                "maxWidth": "500",
+                "minWidth": "200",
+                "mandatory": "true",
+                "maxLength": "30",
+                "read_only": "false",
+                "field_type": "text",
+                "display_def": "true",
+                "isHyperLink": true,
+                "order_index": 1,
+                "display_name": "Name",
+                "related_field_name": "",
+                "look_up_expressions": [
+                  "contains",
+                  "icontains",
+                  "exact",
+                  "iexact",
+                  "startswith",
+                  "istartswith",
+                  "endswith",
+                  "iendswith",
+                  "isnull"
+                ]
+              },
+              "is_loadingpoint": {
+                "locked": "false",
+                "unique": false,
+                "options": {
+                  "true": "Yes",
+                  "false": "No"
+                },
+                "category": "general",
+                "maxWidth": "500",
+                "minWidth": "130",
+                "mandatory": "false",
+                "read_only": "false",
+                "field_type": "boolean",
+                "display_def": "true",
+                "isHyperLink": false,
+                "order_index": 11,
+                "display_name": "Is Loading Point?",
+                "related_field_name": "",
+                "look_up_expressions": [
+                  "is",
+                  "is not"
+                ]
+              },
+              "last_modified_at": {
+                "locked": "false",
+                "unique": false,
+                "options": [],
+                "category": "other",
+                "maxWidth": "500",
+                "minWidth": "130",
+                "mandatory": "false",
+                "maxLength": "50",
+                "read_only": "false",
+                "field_type": "date_time",
+                "display_def": "false",
+                "isHyperLink": false,
+                "order_index": 19,
+                "display_name": "Modified At",
+                "related_field_name": "",
+                "look_up_expressions": [
+                  "range",
+                  "after",
+                  "before",
+                  "equal"
+                ]
+              },
+              "vch_checking_req": {
+                "locked": "false",
+                "unique": false,
+                "options": {
+                  "true": "Yes",
+                  "false": "No"
+                },
+                "category": "general",
+                "maxWidth": "500",
+                "minWidth": "200",
+                "mandatory": "false",
+                "read_only": "false",
+                "field_type": "boolean",
+                "display_def": "true",
+                "isHyperLink": false,
+                "order_index": 13,
+                "display_name": "Vehicle Checking Required?",
+                "related_field_name": "",
+                "look_up_expressions": [
+                  "is",
+                  "is not"
+                ]
+              },
+              "is_warehouse_point": {
+                "locked": "false",
+                "unique": false,
+                "options": {
+                  "true": "Yes",
+                  "false": "No"
+                },
+                "category": "general",
+                "maxWidth": "500",
+                "minWidth": "200",
+                "mandatory": "false",
+                "read_only": "false",
+                "field_type": "boolean",
+                "display_def": "true",
+                "isHyperLink": false,
+                "order_index": 12,
+                "display_name": "Is Warehouse Point?",
+                "related_field_name": "",
+                "look_up_expressions": [
+                  "is",
+                  "is not"
+                ]
+              }
+            },
+            "One to Many": {
+              "vch_cat": {
+                "locked": "false",
+                "unique": false,
+                "options": [
+                  "VehicleOperation/vehiclecategory/dropdownlist"
+                ],
+                "category": "Map Loading Point",
+                "mandatory": "false",
+                "read_only": "false",
+                "field_type": "related_field",
+                "display_def": "false",
+                "isHyperLink": false,
+                "order_index": 1,
+                "display_name": "Vehicle Category",
+                "pararent_key": "loading_points",
+                "related_field_name": "vch_cat_name",
+                "look_up_expressions": [
+                  "in",
+                  "not_in"
+                ]
+              },
+              "consignor": {
+                "locked": "false",
+                "unique": false,
+                "options": [
+                  "consignment/consignor/dropdownlist"
+                ],
+                "category": "Map Loading Point",
+                "mandatory": "false",
+                "read_only": "false",
+                "field_type": "related_field",
+                "display_def": "false",
+                "isHyperLink": false,
+                "order_index": 2,
+                "display_name": "Consignor",
+                "pararent_key": "loading_points",
+                "related_field_name": "consignor_full_name",
+                "look_up_expressions": [
+                  "in",
+                  "not_in"
+                ]
+              },
+              "loading_point": {
+                "locked": "false",
+                "unique": false,
+                "options": [
+                  "basic/location/dropdownlist"
+                ],
+                "category": "Map Loading Point",
+                "mandatory": "false",
+                "read_only": "false",
+                "field_type": "related_field",
+                "display_def": "false",
+                "isHyperLink": false,
+                "order_index": 3,
+                "display_name": "Loading Point",
+                "pararent_key": "loading_points",
+                "related_field_name": "location_name",
+                "look_up_expressions": [
+                  "in",
+                  "not_in"
+                ]
+              },
+              "loading_points": {
+                "locked": "false",
+                "options": [
+                  "array-object"
+                ],
+                "category": "Map Loading Point",
+                "mandatory": "false",
+                "read_only": "true",
+                "field_type": "json",
+                "display_def": "false",
+                "order_index": 4,
+                "display_name": "Next Loading Points",
+                "pararent_key": "loading_points",
+                "related_field_name": "",
+                "look_up_expressions": [
+                  "contains",
+                  "contained_by",
+                  "has_key",
+                  "has_keys",
+                  "has_any_keys"
+                ]
+              }
+            },
+            "Many To Many": {}
+          }
+    }
